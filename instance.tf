@@ -6,7 +6,7 @@ resource "aws_instance" "example" {
   # the security group
   vpc_security_group_ids = [aws_security_group.allow-ssh.id]
   # the public SSH key
-  key_name = aws_key_pair.mykeypair.key_name
+  key_name = aws_key_pair.vpckeypair.key_name
   tags = {
     Name = "surajit--Lab5-ec2"
   }
